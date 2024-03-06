@@ -25,6 +25,10 @@ router.post("/register", async (req, res, next) => {
   }
 });
 
+router.get("/", (req, res) => {
+  res.status(200).send("welcome to login");
+});
+
 // Register
 
 router.post("/login", async (req, res, next) => {
