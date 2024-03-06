@@ -19,7 +19,7 @@ app.use((0, cookie_parser_1.default)());
 dotenv_1.default.config();
 (0, db_1.default)(process.env.MONGO_URI);
 app.use(
-  (0, cors_1.default)({ origin: "http://localhost:5173", credentials: true })
+  (0, cors_1.default)({ origin: "https://target-ten.vercel.app", credentials: true })
 );
 // app.use(MongoError());
 app.use((err, req, res, next) => {
