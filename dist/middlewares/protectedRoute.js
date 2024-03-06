@@ -17,6 +17,7 @@ const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const verifyToken = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const token = yield req.cookies.token;
+         console.log(token);
         if (!token) {
             return res.status(401).json({ message: "unauthorized" });
         }
