@@ -13,7 +13,7 @@ app.use(cookieParser());
 dotenv.config();
 connection(process.env.MONGO_URI as string);
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://target-ten.vercel.app", credentials: true }));
 // app.use(MongoError());
 app.use(
   (
